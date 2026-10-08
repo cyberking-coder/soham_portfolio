@@ -17,6 +17,7 @@
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --font-display: "Space Grotesk", "Inter", sans-serif;
   --font-serif: "Instrument Serif", Georgia, serif;
+  --font-name: "Fraunces", Georgia, "Times New Roman", serif;
 
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out: cubic-bezier(0.65, 0.05, 0.36, 1);
@@ -212,17 +213,18 @@ em { font-style: normal; font-family: var(--font-serif); }
 @keyframes pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.35; transform: scale(0.7); } }
 
 .hero__title {
-  font-family: var(--font-display);
-  font-weight: 500;
+  font-family: var(--font-name);
+  font-optical-sizing: auto;
+  font-weight: 600;
   font-size: clamp(3.2rem, 15vw, 13rem);
-  line-height: 0.92; letter-spacing: -0.03em;
+  line-height: 0.9; letter-spacing: -0.02em;
   text-transform: uppercase;
 }
 .hero__title .line { display: block; overflow: hidden; }
 .hero__title .line > span { display: block; transform: translateY(105%); }
 .hero.is-in .hero__title .line > span { transform: translateY(0); transition: transform 1.1s var(--ease); }
 .hero.is-in .hero__title .line:nth-child(2) > span { transition-delay: 0.1s; }
-.hero__title em { font-weight: 400; letter-spacing: 0; text-transform: none; }
+.hero__title em { font-family: var(--font-name); font-style: italic; font-weight: 500; letter-spacing: -0.01em; text-transform: none; }
 
 .hero__sub {
   margin-top: clamp(2rem, 5vw, 3.5rem);
