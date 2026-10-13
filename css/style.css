@@ -224,7 +224,7 @@ em { font-style: normal; font-family: var(--font-serif); }
 .hero__title .line > span { display: block; transform: translateY(105%); }
 .hero.is-in .hero__title .line > span { transform: translateY(0); transition: transform 1.1s var(--ease); }
 .hero.is-in .hero__title .line:nth-child(2) > span { transition-delay: 0.1s; }
-.hero__title em { font-family: var(--font-name); font-style: italic; font-weight: 500; letter-spacing: -0.01em; text-transform: none; }
+.hero__title em { font-family: var(--font-name); font-style: normal; font-weight: 600; letter-spacing: -0.02em; text-transform: uppercase; }
 
 .hero__sub {
   margin-top: clamp(2rem, 5vw, 3.5rem);
